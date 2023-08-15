@@ -1,0 +1,35 @@
+You require to create this API to fulfill our requirement, but you can add if needed
+
++---------------------------------------------------------------------+
+| Title 								|	Response 				|	Argument/Payload 	|	Type	|
+|-----------------------+-----------------+-------------------+-------|
+| Video Thumbnail List	| - VideoID				|										| GET		|
+|												| - Url Image			|										|				|
+|												|		Thumbnail			|										|				|
+|-----------------------+-----------------+-------------------+-------|
+| Product List					| - ProductID			| - VideoID					| GET		|
+|												| - Link Product	|										|				|
+|												| - Title					|										|				|
+|												| - Price					|										|				|
+|-----------------------+-----------------+-------------------+-------|
+| Comment List					| - Username			| - VideoID					| GET		|
+|												| - Comment				|										|				|
+|												| - timestamp			|										|				|
+|-----------------------+-----------------+-------------------+-------|
+| Submit Comment				| - Success				| - VideoID					| POST	|
+|												| - Fail					| - Username				|				|
+|												|									| - Comment					|				|
++---------------------------------------------------------------------+
+
+======================
+# REST-API
+
+base_uri = localhost:port
+base_api = {base_uri}/api
+
+comment = {base_api}/comments
+product = {base_api}/products
+thumbnail = {base_api}/videoThumbnails
+
+======================
+
